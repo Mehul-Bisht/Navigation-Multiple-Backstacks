@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationmultiplebackstacks.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_homeNextFragment"
+            app:destination="@id/homeNextFragment"
+            app:restoreState="true"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/commonFragment"
+        android:name="com.example.navigationmultiplebackstacks.CommonFragment"
+        android:label="fragment_common"
+        tools:layout="@layout/fragment_common" >
+        <action
+            android:id="@+id/action_commonFragment_to_commonNextFragment"
+            app:destination="@id/commonNextFragment"
+            app:restoreState="true"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/subscriptionsFragment"
+        android:name="com.example.navigationmultiplebackstacks.SubscriptionsFragment"
+        android:label="fragment_subscriptions"
+        tools:layout="@layout/fragment_subscriptions" >
+        <action
+            android:id="@+id/action_subscriptionsFragment_to_subscriptionsNextFragment"
+            app:destination="@id/subscriptionsNextFragment"
+            app:restoreState="true"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.navigationmultiplebackstacks.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.navigationmultiplebackstacks.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/homeNextFragment"
+        android:name="com.example.navigationmultiplebackstacks.HomeNextFragment"
+        android:label="fragment_home_next"
+        tools:layout="@layout/fragment_home_next" />
+    <fragment
+        android:id="@+id/commonNextFragment"
+        android:name="com.example.navigationmultiplebackstacks.CommonNextFragment"
+        android:label="fragment_common_next"
+        tools:layout="@layout/fragment_common_next" >
+        <action
+            android:id="@+id/action_commonNextFragment_to_commonNexttFragment"
+            app:destination="@id/commonNexttFragment"
+            app:restoreState="true"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/commonNexttFragment"
+        android:name="com.example.navigationmultiplebackstacks.CommonNexttFragment"
+        android:label="fragment_common_nextt"
+        tools:layout="@layout/fragment_common_nextt" />
+    <fragment
+        android:id="@+id/subscriptionsNextFragment"
+        android:name="com.example.navigationmultiplebackstacks.SubscriptionsNextFragment"
+        android:label="fragment_subscriptions_next"
+        tools:layout="@layout/fragment_subscriptions_next" />
+</navigation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello Common fragment"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:layout_above="@id/goto_commonNext"/>
+
+    <Button
+        android:id="@+id/goto_commonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to Common Next"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

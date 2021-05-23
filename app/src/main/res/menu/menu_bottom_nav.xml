@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/commonFragment"
+        android:title="Common"
+        android:icon="@drawable/ic_common"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/subscriptionsFragment"
+        android:title="Subscriptions"
+        android:icon="@drawable/ic_subscriptions"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/savedFragment"
+        android:title="Saved"
+        android:icon="@drawable/ic_saved"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/libraryFragment"
+        android:title="Library"
+        android:icon="@drawable/ic_library"
+        android:iconTint="@color/black"
+        />
+</menu>
